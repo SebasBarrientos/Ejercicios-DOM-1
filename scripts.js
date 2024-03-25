@@ -28,11 +28,7 @@ console.log(document.domain);
 // Cambia el fondo de todos los `infocard-lg-data text-muted` para todos los Pokimon voladores `itype flying`
 
 const fondo_cuadrado = document.querySelectorAll(".infocard-lg-data.text-muted")
-// const text_muted = document.querySelectorAll (".text-muted")
 const tipo = fondo_cuadrado[5].lastChild.lastChild.classList.value;
-
-// console.log(text_muted);
-//  console.log(fondo_cuadrado[0].classList);
 // itype flying esta es la clase que me dira si son voladores mirando la clase de a de 
 console.log(tipo);
 for (let i = 0; i < fondo_cuadrado.length; i++) {
@@ -40,6 +36,4 @@ for (let i = 0; i < fondo_cuadrado.length; i++) {
         fondo_cuadrado[i].style.background = "blue"
     };
     
-}// for (let index = 0; index < fondo_cuadrado.length; index++) {
-    
-// }
+}
